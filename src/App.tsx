@@ -6,6 +6,7 @@ import AuthLayout from './_auth/AuthLayout';
 import RootLayout from './root/RootLayout';
 import SignupForm from './_auth/forms/SignupForm';
 import { Toaster } from './components/ui/toaster';
+import Explore from './root/pages/Explore';
 
 function App() {
   return (
@@ -20,6 +21,11 @@ function App() {
 
           {/* private routes */}
           <Route element={<RootLayout />}>
+            <Route path="/" element={<Home />} />
+            <Route path="/" element={<Explore />} />
+            <Route path="/" element={<Home />} />
+            <Route path="/" element={<Home />} />
+            <Route path="/" element={<Home />} />
             <Route path="/" element={<Home />} />
           </Route>
         </Routes>
